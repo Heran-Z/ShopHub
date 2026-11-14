@@ -1,0 +1,276 @@
+
+.details-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+  color: #172033;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.details-page * {
+  box-sizing: border-box;
+}
+
+.details-breadcrumb {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 35px 8%;
+  color: #929bad;
+  font-size: 13px;
+}
+
+.details-breadcrumb a,
+.details-back a {
+  color: #f47b35;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  margin: 0 8% 50px;
+  align-items: start;
+}
+
+.details-image {
+  height: 510px;
+  border-radius: 18px;
+  background: #eef0f5;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.details-information {
+  padding-top: 15px;
+}
+
+.details-category {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #fff0e8;
+  color: #e96e2c;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.details-information h1 {
+  font-size: clamp(30px, 4vw, 43px);
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  margin: 22px 0 15px;
+}
+
+.details-price {
+  color: #f47b35;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.details-divider {
+  height: 1px;
+  background: #e5e8ef;
+  margin: 28px 0;
+}
+
+.details-information h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.details-description {
+  color: #7d8799;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.details-stock {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #8490a2;
+}
+
+.in-stock {
+  color: #15945c;
+  font-weight: 800;
+}
+
+.out-stock {
+  color: #dc4242;
+  font-weight: 800;
+}
+
+.details-purchase {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.quantity-selector {
+  height: 49px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e5ec;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #172033;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-selector button:disabled {
+  color: #b9bfca;
+  cursor: not-allowed;
+}
+
+.quantity-selector span {
+  min-width: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.add-cart-btn {
+  flex: 1;
+  min-height: 49px;
+  border: none;
+  border-radius: 9px;
+  background: #f47b35;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.add-cart-btn:hover {
+  background: #e96925;
+  transform: translateY(-2px);
+}
+
+.cart-feedback {
+  margin-top: 15px;
+  color: #15945c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.details-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e8ef;
+}
+
+.details-benefits div {
+  color: #7d8799;
+  font-size: 11px;
+}
+
+.details-benefits span {
+  margin-right: 6px;
+  color: #15945c;
+  font-weight: 900;
+}
+
+.details-back {
+  margin: 0 8% 60px;
+  font-size: 13px;
+}
+
+.details-message {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: #68748a;
+}
+
+.details-message a {
+  color: #f47b35;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .details-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .details-image {
+    height: 380px;
+  }
+}
+
+@media (max-width: 550px) {
+  .details-breadcrumb {
+    margin: 25px 5%;
+    font-size: 11px;
+  }
+
+  .details-container {
+    margin: 0 5% 35px;
+  }
+
+  .details-image {
+    height: 300px;
+  }
+
+  .details-purchase {
+    flex-direction: column;
+  }
+
+  .quantity-selector {
+    width: fit-content;
+  }
+
+  .details-back {
+    margin: 0 5% 40px;
+  }
+}
+
+/* ── extra small screens ── */
+@media (max-width: 400px) {
+  .details-image {
+    height: 240px;
+  }
+
+  .details-information h1 {
+    font-size: 26px;
+  }
+
+  .details-price {
+    font-size: 22px;
+  }
+
+  .details-benefits {
+    gap: 12px;
+  }
+}
