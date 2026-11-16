@@ -4,7 +4,11 @@ import api from "../services/api";
 
 function BackendStatus() {
   const [status, setStatus] = useState("Checking connection...");
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> f737b43b4ee424e827a9bd2dc9ed02f8721497d1
   useEffect(() => {
     const checkBackend = async () => {
       try {
@@ -32,7 +36,10 @@ function BackendStatus() {
       Backend: {status}
     </div>
   );
+<<<<<<< HEAD
   */
+=======
+>>>>>>> f737b43b4ee424e827a9bd2dc9ed02f8721497d1
 }
 
 export default BackendStatus;
