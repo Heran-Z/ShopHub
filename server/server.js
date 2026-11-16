@@ -30,7 +30,6 @@ const __dirname = path.dirname(__filename);
 // CORS
 const allowedOrigins = [
   "http://localhost:5173",
-<<<<<<< HEAD
   "https://shop-hub-ecommerce-5npvl8v5v-andnet1.vercel.app" // Use your exact Vercel URL
 ];
 
@@ -40,18 +39,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-=======
-  process.env.CLIENT_URL
-].filter(Boolean);
 
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials: true,
-  })
-);
-
->>>>>>> f737b43b4ee424e827a9bd2dc9ed02f8721497d1
 // Body parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
