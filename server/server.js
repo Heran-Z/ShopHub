@@ -29,7 +29,6 @@ const __dirname = path.dirname(__filename);
 // CORS
 // CORS
 const allowedOrigins = [
-  "http://localhost:5173",
   "https://shop-hub-ecommerce-r2r54alp8-andnet1.vercel.app"
 ];
 
