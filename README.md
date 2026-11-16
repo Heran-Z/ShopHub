@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# ShopHub
-
-Advanced E-commerce and Inventory Management System.
-=======
 ShopHub — Ecommerce Platform
 
 A full-stack ecommerce application built with React, Vite, Node.js, Express, and MongoDB.
@@ -40,4 +35,3 @@ Admin dashboard
 Product management
 
 Contact messages
->>>>>>> f737b43b4ee424e827a9bd2dc9ed02f8721497d1
