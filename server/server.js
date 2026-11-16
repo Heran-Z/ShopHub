@@ -30,7 +30,7 @@ const __dirname = path.dirname(__filename);
 // CORS
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://shop-hub-ecommerce-three.vercel.app" // Use your exact Vercel URL
+  "https://shop-hub-ecommerce-5npvl8v5v-andnet1.vercel.app" // Use your exact Vercel URL
 ];
 
 app.use(cors({
